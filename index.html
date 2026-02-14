@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basket Antrenörü - CV</title>
+  <style>
+    /* Temel sıfırlama */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.45;
+      background: linear-gradient(180deg,#f6f8fb,#ffffff);
+      color: #222;
+      padding: 28px;
+    }
+
+    /* Düzen: sol içerik / sağ sidebar */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* Kart görünümü */
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(20,30,60,0.06);
+      padding: 22px;
+      overflow: hidden;
+    }
+
+    /* Başlık */
+    header .name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0b3d91;
+    }
+    header .role {
+      margin-top: 6px;
+      color: #4b5563;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* Hakkında bölümü */
+    .about p { margin-top: 12px; color:#333; }
+
+    /* Kariyer (liste + foto) */
+    .career-list { margin-top: 12px; }
+    .career-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 12px;
+      padding: 12px 10px;
+      border-radius: 8px;
+      align-items: center;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, rgba(11,61,145,0.03), rgba(11,61,145,0.01));
+    }
+    .career-item img {
+      width: 80px; height: 80px; object-fit: cover; border-radius: 8px;
+      border: 2px solid rgba(11,61,145,0.08);
+    }
+    .career-item .meta { font-size: 0.92rem; }
+    .career-item .meta .title { font-weight: 700; color:#0b3d91; }
+    .career-item .meta .when { font-size: 0.82rem; color:#6b7280; margin-top:4px; }
+
+    /* Özellikler / yetkinlikler */
+    .skills { margin-top: 14px; display:flex; flex-wrap:wrap; gap:8px; }
+    .skill {
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(11,61,145,0.08);
+      color: #06327a;
+      font-weight:600;
+      font-size:0.86rem;
+    }
+
+    /* Sağ sidebar (foto + iletişim) */
+    .sidebar {
+      position: sticky;
+      top: 28px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .photo-block {
+      text-align: center;
+      padding: 18px;
+    }
+    .photo-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      display:block;
+    }
+    .contact {
+      padding: 16px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(2,6,23,0.02), rgba(2,6,23,0.01));
+    }
+    .contact h4 { margin-bottom: 10px; color:#0b3d91; }
+    .contact p { margin-bottom: 8px; color:#333; font-weight:600; }
+    .contact a {
+      display:inline-block;
+      margin-top:8px;
+      text-decoration:none;
+      color: white;
+      background: #0b3d91;
+      padding: 8px 12px;
+      border-radius:8px;
+      font-weight:700;
+      font-size:0.9rem;
+    }
+
+    /* Footer notları */
+    footer { margin-top: 18px; text-align:center; color:#6b7280; font-size:0.85rem; }
+
+    /* Responsive: tablet / mobilde tek sütun */
+    @media (max-width: 880px) {
+      .container { grid-template-columns: 1fr; padding: 8px; }
+      .sidebar { position: relative; top: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- SOL: Ana içerik -->
+    <main class="card">
+      <header>
+        <!-- DEĞİŞTİRİN: isminizi ve unvanınızı buraya yazın -->
+        <div class="name">DERYA ZEREN</div>
+        <div class="role">Basketbol Antrenörü / Koç</div>
+      </header>
+
+      <!-- HAKKINDA -->
+      <section class="about" style="margin-top:16px;">
+        <h3 style="color:#0b3d91;">Hakkında</h3>
+        <!-- DEĞİŞTİRİN: kısa tanıtım metni -->
+        <p>
+            Ben Derya Zeren, 1976'de Almanya Wiesbaden'de doğdum. Samsun 19 Mayıs Lisesi mezunuyum. 1994 yılında mezun oldum ve mezuniyetimden sonraki yıllarımı basketbola adadım. Basketbol kariyerine Samsun DSI Spor Kulübünde 1989 yılında sporcu olarak başladım. A Takımında yer aldım. Kariyerimde, A takımında oyuncuyken alt yapılarda antrenörlük görevi aldım. 1998 yılından 2001 yılları arasında A takımında baş antrenör olarak görev yaptım.
+
+            2002-2003 yılları arasında Samsunpor'da yardımcı antrenör, 2003-2004 yılları arası ise Samsunspor'da Baş antrenör olarak görev yaptım. 2004-2005 sezonunda 2. ligden 1. lige yükselen Panasonic Samsunspor Basketbol Takımı'nda yardımcı antrenör olarak görev yaptım
+        </p>
+      </section>
+
+      <!-- KARİYER -->
+      <section class="career" style="margin-top:18px;">
+        <h3 style="color:#0b3d91;">Kariyer</h3>
+
+        <div class="career-list">
+          <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+          <article class="career-item">
+            <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+            <img src="images/kulup1.jpg" alt="Kulüp foto">
+            <div class="meta">
+              <div class="title">Samsun DSİ Spor - Başantrenör</div>
+              <div class="when">1998 — 2001<br><small style="color:#6b7280;"></small></div>
+            </div>
+          </article>
+
+        <div class="career-list">
+          <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+          <article class="career-item">
+              <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+              <img src="images/kulup1.jpg" alt="Kulüp foto">
+              <div class="meta">
+                <div class="title">Samsun DSİ Spor - Yardımcı Antrenör</div>
+                <div class="when">2002 — 2003<br><small style="color:#6b7280;"></small></div>
+              </div>
+            </article>
+
+        <div class="career-list">
+           <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+           <article class="career-item">
+                  <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                  <img src="images/kulup1.jpg" alt="Kulüp foto">
+                  <div class="meta">
+                    <div class="title">SamsunSpor - Baş Antrenör</div>
+                    <div class="when">2003 — 2004<br><small style="color:#6b7280;"></small></div>
+                  </div>
+                </article>
+
+        <div class="career-list">
+                <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                <article class="career-item">
+                  <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                  <img src="images/kulup1.jpg" alt="Kulüp foto">
+                  <div class="meta">
+                    <div class="title">Panasonic SamsunSpor - Yardımcı Antrenör
+                        //Panasonic Samsunspor Basketbol Takımı ile 2. ligden 1. lige yükseldik.
+                    </div>
+                    <div class="when">2004 — 2005<br><small style="color:#6b7280;"></small></div>
+                 </div>
+                    </article>
+
+        <div class="career-list">
+                    <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                    <article class="career-item">
+                      <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                      <img src="images/kulup1.jpg" alt="Kulüp foto">
+                     <div class="meta">
+                        <div class="title">UNO İstanbulSpor - Yardımcı Antrenör   
+                            //Play-Off
+                        </div>
+                        <div class="when">2005 — 2006<br><small style="color:#6b7280;"></small></div>
+                    </div>
+                </article>        
+
+        <div class="career-list">
+                    <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                    <article class="career-item">
+                      <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                      <img src="images/kulup1.jpg" alt="Kulüp foto">
+                      <div class="meta">
+                        <div class="title">UNO İstanbulSpor - Baş Antrenör 
+                            
+                            //Play-Off Başarımızı Devam Ettirdik.
+                        </div>
+                        <div class="when">2006 — 2007<br><small style="color:#6b7280;"></small></div>
+                      </div>
+                    </article>     
+                    
+        <div class="career-list">
+            <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+            <article class="career-item">
+          <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                      <img src="images/kulup1.jpg" alt="Kulüp foto">
+                      <div class="meta">
+                     <div class="title">UNO Business Lig - Baş Antrenör 
+                        //Business Liginde UNO ile şampiyon olduk.
+
+                    </div>
+                    <div class="when">2007 — 2008<br><small style="color:#6b7280;"></small></div>
+              </div>
+            </article>  
+                    
+        <div class="career-list">
+         <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+         <article class="career-item">
+         <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                      <img src="images/kulup1.jpg" alt="Kulüp foto">
+                      <div class="meta">
+                            <div class="title">UNO Business Lig - Baş Antrenör 
+                            //Play-Off
+    
+                     </div>
+                    <div class="when">2008 — 2010<br><small style="color:#6b7280;"></small></div>
+              </div>
+             </article>
+
+        <div class="career-list">
+        <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+        <article class="career-item">
+          <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                          <img src="images/kulup1.jpg" alt="Kulüp foto">
+                          <div class="meta">
+                                 <div class="title">OrduSpor - Baş Antrenör 
+                             //TKB2L'de yer alan Orduspor ile Play-Off müsabakaları
+            
+                        </div>
+                    <div class="when">2011 — 2012<br><small style="color:#6b7280;"></small></div>
+                 </div>
+             </article>
+
+
+        <div class="career-list">
+            <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+            <article class="career-item">
+              <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                             <img src="images/kulup1.jpg" alt="Kulüp foto">
+                              <div class="meta">
+                                 <div class="title">Güre Belediye Spor - Baş Antrenör 
+                               //Türkiye gençler şampiyonasında final oynayarak Türkiye 2.si olduk
+                            
+                        </div>
+                     <div class="when">2012 — 2013<br><small style="color:#6b7280;"></small></div>
+                </div>
+            </article>
+
+
+        <div class="career-list">
+            <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+            <article class="career-item">
+            <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                        <img src="images/kulup1.jpg" alt="Kulüp foto">
+                         <div class="meta">
+                              <div class="title">Tekkeköy Belediye Spor - Baş Antrenör 
+                            //Tekkeköy Belediyespor ile TKB2L'de genç bir ekip ile mücadele ettik.
+                                                                             
+                         </div>
+                     <div class="when">2013 — 2014<br><small style="color:#6b7280;"></small></div>
+                </div>
+            </article>
+
+            <div class="career-list">
+                <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                <article class="career-item">
+                <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                            <img src="images/kulup1.jpg" alt="Kulüp foto">
+                             <div class="meta">
+                                  <div class="title">Edremit Belediyesi Güre Spor - Baş Antrenör 
+                                //8'li Finallerde sırt sırta verdik.(2014-2015)
+                                // 4'lü Finallerde yer aldık.(2015-2016)
+                                                                                 
+                             </div>
+                         <div class="when">2014 — 2016<br><small style="color:#6b7280;"></small></div>
+                    </div>
+                </article>
+
+        <div class="career-list">
+                    <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                    <article class="career-item">
+                    <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                                <img src="images/kulup1.jpg" alt="Kulüp foto">
+                                 <div class="meta">
+                                      <div class="title">EdirneSpor - Baş Antrenör 
+                                                                                     
+                                 </div>
+                             <div class="when">2016 — 2017<br><small style="color:#6b7280;"></small></div>
+                        </div>
+                    </article>
+
+        <div class="career-list">
+                        <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                        <article class="career-item">
+                        <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                                    <img src="images/kulup1.jpg" alt="Kulüp foto">
+                                     <div class="meta">
+                                          <div class="title">Fenerbahçe Kadın Gelişim Takımı  - Baş Antrenör 
+                                        //Genç Kızlar Türkiye 4.Lüğü
+                                                                                         
+                                     </div>
+                                 <div class="when">2017 — 2018<br><small style="color:#6b7280;"></small></div>
+                            </div>
+                        </article>
+
+        <div class="career-list">
+                            <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                            <article class="career-item">
+                            <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                                        <img src="images/kulup1.jpg" alt="Kulüp foto">
+                                         <div class="meta">
+                                              <div class="title">SamsunSpor  - Yardımcı Antrenör 
+                                                                                             
+                                         </div>
+                                     <div class="when">2018 — 2019<br><small style="color:#6b7280;"></small></div>
+                                </div>
+                            </article>
+
+        <div class="career-list">
+                                <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                                <article class="career-item">
+                                <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                                            <img src="images/kulup1.jpg" alt="Kulüp foto">
+                                             <div class="meta">
+                                                  <div class="title">Yıldırım Spor Kulübü -  Alt Yapı Koordinatörü 
+                                                                                                 
+                                             </div>
+                                         <div class="when">2020 — 2023<br><small style="color:#6b7280;"></small></div>
+            </div>
+            </article>
+
+            <div class="career-list">
+                <!-- ÖRNEK KARIYER GİRİŞİ: her girişe küçük fotoğraf eklenebilir -->
+                <article class="career-item">
+                <!-- DEĞİŞTİRİN: bu img src'yi kendi fotoğraf yolunuza göre güncelleyin -->
+                            <img src="images/kulup1.jpg" alt="Kulüp foto">
+                             <div class="meta">
+                                  <div class="title">Konya Basketbol - Baş Antrenör 
+                                                                                 
+                             </div>
+                         <div class="when">2025 — Halen<br><small style="color:#6b7280;"></small></div>
+             </div>
+             </article>
+
+
+
+          <!-- Daha fazla entry eklemek için bu blokları çoğaltın -->
+        </div>
+      </section>
+
+      <!-- ÖZELLİKLER / YETKİNLİKLER -->
+      <section style="margin-top:18px;">
+        <h3 style="color:#0b3d91;">Özellikler & Yetkinlikler</h3>
+        <div class="skills">
+          <!-- DEĞİŞTİRİN / EKLEYİN -->
+          <div class="skill">Liderlik</div>
+          <div class="skill">Taktik & Oyun Planı& Analiz</div>
+          <div class="skill">Kriz Yönetimi</div>
+          <div class="skill">Yetenek Keşfi</div>
+          <div class="skill">İletişim</div>
+          <div class="skill">Hızlı Karar Verme</div>
+          <div class="skill">Takım Kültürü Oluşturma</div>
+          <div class="skill">Strateji Değişikliği</div>
+        </div>
+      </section>
+
+
+    <!-- SAĞ: Fotoğraf ve İletişim -->
+    <aside class="sidebar">
+      <div class="card photo-block">
+        <!-- DEĞİŞTİRİN: buraya antrenör fotoğrafını koyun (portrait önerilir) -->
+        <img src="images/portre.jpg" alt="Antrenör fotoğrafı">
+      </div>
+
+      <div class="card contact">
+        <h4>İletişim</h4>
+        <!-- DEĞİŞTİRİN: bilgileri kendinize göre düzenleyin -->
+        <p>Telefon: <strong>+90 (533) 250 57 87</strong></p>
+        <p>E-posta: <strong>coach@deryazeren.com</strong></p>
+        <p>Şehir: <strong>Konya, Türkiye</strong></p>
+
+        <!-- Linkleri düzenleyin: mailto ve google maps (isteğe bağlı) -->
+        <a href="mailto:ornek@ornek.com">E-posta Gönder</a>
+        <div style="margin-top:10px; font-size:0.9rem; color:#6b7280;">
+          Sosyal:
+          <div style="margin-top:6px;">
+            <!-- DEĞİŞTİRİN: sosyal profillerinizi buraya ekleyin -->
+            <a href="#" style="text-decoration:none; margin-right:8px; color:#0b3d91; font-weight:700;">Instagram</a>
+            <a href="#" style="text-decoration:none; color:#0b3d91; font-weight:700;">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Basit JS: güncelleme tarihini otomatik koyma (opsiyonel) -->
+  <script>
+    // Tarayıcıda tarihi yerel dilde göstermek isterseniz:
+    const monthsTR = ['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+    const d = new Date();
+    document.getElementById('updated').textContent = d.getDate() + ' ' + monthsTR[d.getMonth()] + ' ' + d.getFullYear();
+  </script>
+</body>
+</html>
